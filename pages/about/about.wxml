@@ -1,0 +1,23 @@
+<view class="weapp-about">
+    <scroll-view scroll-y class="scroll">
+        <view class="webapp-intro" animation="{{animationData}}">
+            <view class="weapp-name">项目相关</view>
+            <view class="webapp-intro-item">
+                <view class="webapp-intro-title">后端支持</view>
+                <view class="webapp-intro-content">豆瓣API：https://developers.douban.com/</view>
+                <view class="webapp-intro-content">百度地图API：http://lbsyun.baidu.com/</view>
+            </view>
+            <view class="webapp-intro-item">
+                <view class="webapp-intro-title">作者</view>
+                <view class="webapp-intro-content">author：https://github.com/oceanaly</view>
+            </view>
+            <view class="webapp-intro-item">
+                <view class="webapp-intro-title">此项目所使用到的API</view>
+                <view class="webapp-intro-content">
+                    wx.request、wx.chooseImage、wx.previewImage、wx.playVoice、wx.saveFile、wx.setStorage、wx.getStorage、wx.clearStorage、wx.getStorageInfo、wx.getLocation、wx.getSystemInfo、wx.onAccelerometerChange、wx.showToast、wx.showModal、wx.showActionSheet、wx.setNavigationBarTitle、wx.navigateTo、wx.redirectTo、wx.login
+                </view>
+            </view>
+            <view class="over" animation="{{animationScroll}}">Share end</view>
+        </view>
+    </scroll-view>
+</view>

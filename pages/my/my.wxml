@@ -1,0 +1,20 @@
+<view class="container">
+	<view class="user-info" wx:if="{{skin}}" style="background-image: url({{skin}})">
+		<view class="user-skin" bindtap="viewSkin"></view>
+		<image wx:if="{{userInfo.avatarUrl}}" src="{{userInfo.avatarUrl}}" class="user-avatar"></image>
+		<view class="user-nickname">
+			{{userInfo.nickName}}
+			<view class="user-sex-male" wx:if="{{userInfo.gender == 1}}"></view>
+			<view class="user-sex-female" wx:else></view>
+		</view>
+		<view class="user-location">{{userInfo.province}},{{userInfo.city}}</view>
+	</view>
+	<view class="grids">
+      <block wx:for="{{gridList}}" wx:for-item="gridItem" wx:for-index="gridIndex" wx:key="grid">
+          <view class="grid" bindtap="viewGridDetail" data-url="{{gridItem.enName}}">
+              <view class="grid-icon grid-icon-{{gridItem.enName}}"></view>
+              <view class="grid-title">{{gridItem.zhName}}</view>
+          </view>
+      </block>
+  </view>
+</view>
