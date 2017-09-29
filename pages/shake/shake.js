@@ -23,7 +23,7 @@ Page({
         shakeCompleteSoundUrl: config.shakeSound.completeUrl,
         shakeWelcomeImg: config.shakeWelcomeImg,
         hasMore: true,
-        debug: true //显示debug数据
+        debug: false //显示debug数据
     },
     onLoad() {
         wx.getStorage({
