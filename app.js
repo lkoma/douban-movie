@@ -1,4 +1,4 @@
-var config = require('comm/script/config');
+const config = require('comm/script/config');
 App({
 	globalData: {
 		userInfo: null
